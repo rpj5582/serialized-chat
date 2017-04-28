@@ -1,0 +1,26 @@
+{
+  "name": "serialized-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/main.js",
+  "scripts": {
+    "start": "node ./server/main.js",
+    "pretest": "eslint ./server --fix",
+    "test": "echo \"Test Complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpj5582/serialized-chat.git"
+  },
+  "author": "Ryan Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpj5582/serialized-chat/issues"
+  },
+  "homepage": "https://github.com/rpj5582/serialized-chat#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
