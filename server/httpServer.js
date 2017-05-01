@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const PORT = 3000;
+const PORT = process.env.PORT || process.env.NODE_PORT || 3000;
 
 const onRequest = (request, response) => {
   switch (request.url) {
