@@ -3,10 +3,32 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
     
     <title>Serialized Chat</title>
   </head>
   
   <body>
+    <div id="popupWindow">
+      <div id="popupWindowChild">
+        <p>Enter your username</p>
+        <p id="badUsernameText"></p>
+        <div>
+          <input id="usernameInput" type="text" />
+          <input id="connectButton" type="button" value="Connect" />
+        </div>
+      </div>
+    </div>
+    
+    <h3>Users</h3>
+    <div id="usersBox"></div>
+    
+    <textarea id="chatHistory" readonly></textarea>
+    
+    <div class="userInput">
+      <input id="chatInput" type="text" />
+      <input id="chatSendButton" type="button" value="Send" />
+    </div>
   </body>
 </html>

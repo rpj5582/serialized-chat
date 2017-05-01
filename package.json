@@ -4,7 +4,7 @@
   "description": "",
   "main": "./server/main.js",
   "scripts": {
-    "start": "node ./server/main.js",
+    "start": "node ./server/webSocketServer.js",
     "pretest": "eslint ./server --fix",
     "test": "echo \"Test Complete\""
   },
@@ -22,5 +22,8 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0"
+  },
+  "dependencies": {
+    "socket.io": "^1.7.3"
   }
 }
